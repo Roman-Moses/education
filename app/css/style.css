@@ -98,6 +98,13 @@ nav button{
 .nav-menu a:hover{
     color: var(--bg2);
 }
+
+/* scroolling section */
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0);
+}
+
 /* end of styling navbar section */
 
 /* star of styling hero section */
