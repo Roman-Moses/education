@@ -61,7 +61,7 @@ img{
 .btn:hover{
     background: transparent;
     color: var(--white);
-    border: var(--white);
+    border:2px solid var(--white);
 }
 .btn-primary{
     background: var(--danger);
@@ -133,7 +133,7 @@ header .left p{
 .categories{
     background: var(--bgl);
     padding: 2rem;
-    height: 22rem;
+    height: 28rem;
 }
 .categories h1{
     line-height: 1;
@@ -173,3 +173,32 @@ header .left p{
 .category h5{
     margin: 2rem 0 1rem;
 }
+
+.courses{
+    margin-top: 10rem;
+}
+
+
+.container-couses {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px; 
+  }
+  .couse{
+    background: var(--bgl);
+    border: 1px solid transparent;
+    text-align: center;
+    transition: var(--transition);
+  }
+.couse:hover{
+    border-color: var(--color-primary);
+    background-color: transparent;
+}
+
+  .course-info{
+    padding: 2rem;
+  }
+  .course-info p{
+    margin:  1rem 0 2rem;
+    font-size: 0.9rem;
+  }
