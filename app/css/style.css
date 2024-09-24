@@ -337,4 +337,72 @@ header .left p{
   padding: 1.2rem 0;
   border-top: 1px solid var(--bg2);
   font-size: 1.2rem;
+  transition: var(--transition);
+}
+.footer-socials a:hover{
+  color: var(--danger);
+
+}
+
+
+/* responsiveness off our home page */
+
+@media screen and (max-width:1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+  h1{
+    font-size:2rem ;
+  }
+  h2{
+    font-size:1.7rem ;
+  }
+  h3{
+    font-size:1.4rem ;
+  }
+  h4{
+    font-size:1.2rem ;
+  }
+
+  /* navbar responsiveness */
+
+  nav button{
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  nav #close{
+    display: none;
+  }
+
+  .nav-menu{
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+    transition: var(--transition);
+  }
+  .nav-menu li{
+    width: 100%;
+    height: 4rem;
+  }
+  .nav-menu li a{
+    background: var(--color-primary);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .nav-menu li a:hover{
+    background: var(--bg2);
+  }
+  
 }
