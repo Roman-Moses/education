@@ -416,6 +416,7 @@ header .left p{
   }
   .nav-menu li a:hover{
     background: var(--bg2);
+    color: var(--warning);
   }
 /* start of aniamtion section  of navbar links */
 
@@ -431,8 +432,83 @@ header .left p{
   }
   
 }
-
-
-
-  
+header{
+  height: 52vh;
 }
+.categories{
+  height: fit-content;
+}
+.categories-continer{
+  grid-template-columns: 1fr;
+}
+.courses{
+  margin-top: 3rem;
+}
+.footer-container{
+  grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media only screen and (max-width:600px){
+  .container{
+    width: var(--container-width-sm);
+  }
+  .nav-menu{
+    right: 3%;
+  }
+  header{
+    height: 100vh;
+  }
+  .container-header{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .cate-right{
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-couses{
+    grid-template-columns: 1fr 1fr;
+  }
+  .fags-container{
+    grid-template-columns: 1fr ;
+  }
+}
+
+@media only screen and (max-width:412px){
+  .cate-right{
+    grid-template-columns: 1fr;
+  }
+  .courses h2{
+    font-size: 30px;
+  }
+  .container-couses{
+    grid-template-columns: 1fr;
+  }
+  .fags h2{
+    font-size: 30px;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width:428px){
+  .cate-right{
+    grid-template-columns: 1fr;
+  }
+  .courses h2{
+    font-size: 30px;
+  }
+  .container-couses{
+    grid-template-columns: 1fr;
+  }
+  .fags h2{
+    font-size: 30px;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+
+}
+
