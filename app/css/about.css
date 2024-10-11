@@ -1,0 +1,62 @@
+:root{
+    --color-primary:#6c63ff;
+    --success:#00bf8e;
+    --warning:#f7c94b;
+    --danger:#f75842;
+    --danger-variant:rgba(247, 88, 66, 0.4);
+    --white:#fff;
+    --light:rgba(255, 255, 255, 0.7);
+    --black:#000;
+    --bgl:#2e3267;
+    --bg:#1f2641;
+    --bg2:#424890;
+
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+}
+
+
+
+
+
+
+
+.about-achievements{
+    margin-top: 3rem;
+}
+
+.achive-contner{
+    display: grid;
+    grid-template-columns:40% 60%;
+    gap: 4rem;
+}
+.achive-right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+.achive-cards{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1.5rem;;
+}
+.achiev-card{
+    background:var(--bgl);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.achiev-card:hover{
+    background: var(--bg2);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.achive-icon{
+    background: var(--danger);
+    padding: 0.6rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border-radius: 1rem;
+}
