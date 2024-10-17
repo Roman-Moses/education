@@ -18,14 +18,8 @@
     --transition: all 400ms ease;
 }
 
-
-
-
-
-
-
 .about-achievements{
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 
 .achive-contner{
@@ -59,4 +53,82 @@
     margin-bottom: 2rem;
     display: inline-block;
     border-radius: 1rem;
+    font-size: 2rem;
 }
+
+.achiev-card:nth-child(2) .achive-icon{
+    background: var(--success);
+}
+.achiev-card:nth-child(3) .achive-icon{
+    background: var(--color-primary);
+}
+.achiev-card p{
+    margin-top: 1rem;
+}
+
+.team{
+    padding-top: 3rem;
+    margin-top: 4rem;
+    background: var(--bgl);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+}
+.team-continer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.team-member{
+    background: var(--bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.team-member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: pointer;
+}
+.team-m-img img{
+    filter: saturate(0);
+}
+.team-member:hover img{
+    filter: saturate(1);
+}
+.tean-m-info *{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.tean-m-info p{
+    color: var(--light);
+}
+
+.team-socils{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -80%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius:1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+.team-socils a{
+    padding: 1rem;
+}
+
+.team-member:hover .team-socils{
+    right: 0;
+}
+.team-socils a:hover{
+    color: #00bf8e;
+    transition: var(--transition);
+}
+
+
+
+/************** start of media queries  ***********/
