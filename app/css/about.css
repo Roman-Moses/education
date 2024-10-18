@@ -67,10 +67,11 @@
 }
 
 .team{
-    padding-top: 3rem;
+    padding: 3rem;
     margin-top: 4rem;
     background: var(--bgl);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 4rem;
 }
 .team-continer{
     display: grid;
@@ -128,7 +129,76 @@
     color: #00bf8e;
     transition: var(--transition);
 }
+.team h2{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 25px;
+}
+.tean-m-info h4{
+    text-transform:uppercase;
+}
 
 
 
 /************** start of media queries  ***********/
+
+@media only screen and (max-width:1024px) {
+    .achive-contner{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .achive-contner .achive-left{
+        width: 80%;
+    }  
+}
+
+
+
+@media only screen and (max-width:810px) {
+    .team-continer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .tean-m-info h4{
+        text-transform:uppercase;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width:412px) {
+    .achive-right h1{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .achive-cards{
+        grid-template-columns: 1fr;
+    }
+    .team-continer{
+        grid-template-columns: 1fr;
+    }  
+}
+
+@media only screen and (max-width:414px) {
+    .achive-cards{
+        grid-template-columns: 1fr;
+    }
+    .team-continer{
+        grid-template-columns: 1fr;
+    } 
+}
+@media only screen and (max-width:414px) {
+    .achive-cards{
+        grid-template-columns: 1fr;
+    }
+    .team-continer{
+        grid-template-columns: 1fr;
+    } 
+}
+@media only screen and (max-width:430px) {
+    .achive-cards{
+        grid-template-columns: 1fr;
+    }
+    .team-continer{
+        grid-template-columns: 1fr;
+    } 
+}

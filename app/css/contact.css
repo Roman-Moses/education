@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+:root{
+    --color-primary:#6c63ff;
+    --success:#00bf8e;
+    --warning:#f7c94b;
+    --danger:#f75842;
+    --danger-variant:rgba(247, 88, 66, 0.4);
+    --white:#fff;
+    --light:rgba(255, 255, 255, 0.7);
+    --black:#000;
+    --bgl:#2e3267;
+    --bg:#1f2641;
+    --bg2:#424890;
+
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+}
+
+.contact{
+    margin:12rem 0 17rem;
+}
+.contact-continer{
+    background: var(--bgl);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    margin: 7rem auto;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.contact-aside{
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 7rem;
+}
+
+.aside-image{
+    width: 12rem;
+    margin-bottom: 5rem;
+}
+.contact-aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.contact-aside p{
+    font-size: o.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.conatac-details li{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-socials{
+    display: flex;
+    margin-top: 2rem;
+    gap: 0.8rem;
+}
+.contact-socials a{
+    background: var(--bg2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition:all .5s ease ;
+}
+.contact-socials a:hover{
+    background: transparent;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-right: 2.5rem;
+}
+.form-name{
+    display: flex;
+    gap: 1.5rem;
+}
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    font-family:"Montserrat", sans-serif ;
+    background: var(--bg);
+    color: aliceblue;
+    outline: none;
+}
+form button{
+    cursor: pointer;
+    width: max-content;
+}
+
+
+
+@media only screen and (max-width:1024px) {
+
+    .contact{
+        margin-bottom: 2.5rem;
+    }
+    .contact-continer{
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+        height: auto;
+        padding: 1rem;
+    }
+    .contact-aside{
+        width: auto;
+        padding: 1rem;
+        bottom: 0;
+    }
+    form{
+        align-self: center;
+    }
+    
+}
+
+
+@media only screen and (max-width:412px) {
+    .contact-continer{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .form-name{
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width:430px) {
+    .contact-continer{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .form-name{
+        flex-direction: column;
+    }
+    
+}
