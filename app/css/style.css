@@ -68,7 +68,7 @@ img{
     color: var(--white);
 }
 
-/* star of styling navbar section */
+/* start of styling navbar section */
 nav{
     width: 100vw;
     height: 5rem;
@@ -493,7 +493,7 @@ header{
   }
 }
 
-@media only screen and (max-width:428px){
+@media only screen and (max-width:430px){
   .cate-right{
     grid-template-columns: 1fr;
   }
